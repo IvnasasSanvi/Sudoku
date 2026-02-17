@@ -4,3 +4,27 @@ body{
     align-items: center;
     font-family: Arial, sans-serif;
 }
+hr{
+    width: 500px;
+}
+#error{
+    color: coral;
+    font-size: 20px;
+}
+#board{
+    width: 450px;
+    height: 450px;
+    background-color: yellow;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+#digits{
+    width: 450px;
+    height: 50px;
+    background-color: yellow;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

@@ -19,6 +19,17 @@ hr{
     display: flex;
     flex-wrap: wrap;
 }
+.title{
+    width: 48px;
+    height: 48px;
+    border: 1px solid lightslategray;
+    /* text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #digits{
     width: 450px;
     height: 50px;
@@ -27,4 +38,16 @@ hr{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+.number{
+    width: 48px;
+    height: 48px;
+    border: 1px solid lightslategray;
+    /* text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }

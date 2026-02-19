@@ -28,18 +28,18 @@ window.onload = function() {
 }
 
 function setGame() {
-    for (let r = 0; r < 9; r++) {
-        for (let c = 0; c < 9; c++) {
-            let tile = document.createElement("p");
-            tile.id = r.toString() + "-" + c.toString();
-            tile.innerText = board[r][c];
-            if (board[r][c] != "-") {
-                tile.classList.add("tile-start");
-            }
-            tile.addEventListener("click", selectTile);
-            document.getElementById("board").appendChild(tile);
-        }   
-    }
+    // for (let r = 0; r < 9; r++) {
+    //     for (let c = 0; c < 9; c++) {
+    //         let tile = document.createElement("p");
+    //         tile.id = r.toString() + "-" + c.toString();
+    //         tile.innerText = board[r][c];
+    //         if (board[r][c] != "-") {
+    //             tile.classList.add("tile-start");
+    //         }
+    //         tile.addEventListener("click", selectTile);
+    //         document.getElementById("board").appendChild(tile);
+    //     }   
+    // }
     for (let i = 1; i <= 9; i++) {
         let num = document.createElement("p");
         num.id = i.toString();

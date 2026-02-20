@@ -7,7 +7,7 @@ body{
 hr{
     width: 500px;
 }
-#error{
+#errors{
     color: coral;
     font-size: 20px;
 }
@@ -22,7 +22,7 @@ hr{
 .tile{
     width: 48px;
     height: 48px;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid lightgray;
     /* text */
     font-size: 20px;
     font-weight: bold;
@@ -54,4 +54,15 @@ hr{
 }
 .number-selected{
     background-color: lightblue;
+}
+.tile-start {
+    background-color: whitesmoke;
+}
+
+.horizontal-line {
+    border-bottom: 1px solid black;
+}
+
+.vertical-line {
+    border-right: 1px solid black;
 }

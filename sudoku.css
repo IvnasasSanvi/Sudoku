@@ -14,15 +14,15 @@ hr{
 #board{
     width: 450px;
     height: 450px;
-    background-color: yellow;
+
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
-.title{
+.tile{
     width: 48px;
     height: 48px;
-    border: 1px solid lightslategray;
+    border: 1px solid rgb(0, 0, 0);
     /* text */
     font-size: 20px;
     font-weight: bold;
@@ -33,16 +33,17 @@ hr{
 #digits{
     width: 450px;
     height: 50px;
-    background-color: yellow;
+    
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 .number{
-    width: 48px;
+    width: 44px;
     height: 48px;
-    border: 1px solid lightslategray;
+    border: 1px solid rgb(90, 100, 110);
+    margin: 2px;
     /* text */
     font-size: 20px;
     font-weight: bold;
@@ -50,4 +51,7 @@ hr{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+.number-selected{
+    background-color: lightblue;
 }

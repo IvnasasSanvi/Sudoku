@@ -49,33 +49,33 @@ function setGame() {
     }   
 }
 
-function selectTile() {
-    if (numSelected) {
-        if (this.innerText != "") {
-            return;
-        }
-        let coords = this.id.split("-");
-        let r = parseInt(coords[0]);
-        let c = parseInt(coords[1]);  
-        if (solution[r][c] == numSelected.id) {
-            this.innerText = numSelected.id;
-            this.classList.add("tile-correct");
-            numSelected.classList.add("num-correct");
-            numSelected = null;
-            tileSelected = null;
-        } else {
-            errors += 1;
-            document.getElementById("errors").innerText = "Errors: " + errors;
-            this.classList.add("tile-wrong");
-            numSelected.classList.add("num-wrong"); 
-            setTimeout(function() {
-                this.classList.remove("tile-wrong");
-                numSelected.classList.remove("num-wrong");
-                numSelected = null;
-                tileSelected = null;
-            }
-            .bind(this), 500);
-        }
-    }
-}
+// function selectTile() {
+//     if (numSelected) {
+//         if (this.innerText != "") {
+//             return;
+//         }
+//         let coords = this.id.split("-");
+//         let r = parseInt(coords[0]);
+//         let c = parseInt(coords[1]);  
+//         if (solution[r][c] == numSelected.id) {
+//             this.innerText = numSelected.id;
+//             this.classList.add("tile-correct");
+//             numSelected.classList.add("num-correct");
+//             numSelected = null;
+//             tileSelected = null;
+//         } else {
+//             errors += 1;
+//             document.getElementById("errors").innerText = "Errors: " + errors;
+//             this.classList.add("tile-wrong");
+//             numSelected.classList.add("num-wrong"); 
+//             setTimeout(function() {
+//                 this.classList.remove("tile-wrong");
+//                 numSelected.classList.remove("num-wrong");
+//                 numSelected = null;
+//                 tileSelected = null;
+//             }
+//             .bind(this), 500);
+//         }
+//     }
+// }
 

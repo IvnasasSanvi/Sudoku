@@ -23,9 +23,6 @@ var solution = [
     "675832941",
     "812945763"
 ];
-window.onload = function() {
-    setGame();
-}
 
 function setGame() {
     //digits 1-9
@@ -89,5 +86,7 @@ function selectTile() {
         }
     }
 }
+
+setGame();
 
 
